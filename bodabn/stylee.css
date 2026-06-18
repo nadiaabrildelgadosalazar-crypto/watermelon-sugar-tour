@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:'Space Grotesk',sans-serif;
+    overflow-x:hidden;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    radial-gradient(circle at top,#5a5a5a20,transparent),
+    #050505;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 0 30px rgba(255,255,255,0.08);
+}
+
+h1{
+    font-family:'Cinzel',serif;
+    font-size:5rem;
+    letter-spacing:6px;
+    margin-bottom:20px;
+}
+
+.fecha{
+    color:silver;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    text-decoration:none;
+    color:white;
+    border:1px solid silver;
+    padding:15px 25px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:silver;
+    color:black;
+}
+
+.imagen-principal{
+    text-align:center;
+}
+
+.imagen-principal img{
+    width:100%;
+    max-width:900px;
+    border-radius:25px;
+}
+
+h2{
+    font-family:'Cinzel',serif;
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+#countdown{
+    font-size:2rem;
+    text-align:center;
+    color:silver;
+}
+
+.reglas ul{
+    list-style:none;
+}
+
+.reglas li{
+    padding:15px;
+    margin:15px 0;
+    border-left:4px solid silver;
+    background:rgba(255,255,255,.05);
+}
+
+.galeria h2{
+    margin-bottom:40px;
+}
+
+.imagenes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.imagenes img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.imagenes img:hover{
+    transform:scale(1.05);
+}
+
+.final{
+    text-align:center;
+}
+
+.final h3{
+    margin-top:30px;
+    color:silver;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    #countdown{
+        font-size:1.3rem;
+    }
+
+    section{
+        padding:70px 6%;
+    }
+
+}

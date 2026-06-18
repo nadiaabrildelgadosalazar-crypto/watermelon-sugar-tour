@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Watermelon Sugar | The Timeline Tour</title>
+
+<link rel="stylesheet" href="styleee.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Caveat:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<section id="intro">
+
+    <div class="intro-content">
+
+        <h2>1995 ↔ 2023</h2>
+
+        <h1>WATERMELON SUGAR</h1>
+
+        <p>A band changed time.</p>
+
+        <button id="enterBtn">
+            CLICK TO ENTER
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CONTENIDO -->
+
+<main id="contenido">
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>WATERMELON SUGAR</h1>
+
+    <h2>THE TIMELINE TOUR</h2>
+
+    <p class="slogan">
+        VIVA LA VIDA
+    </p>
+
+    <p>
+        KSPO Dome • Seoul
+    </p>
+
+    <p>
+        November 15, 2026
+    </p>
+
+</section>
+
+<!-- SPOTIFY -->
+
+<section class="spotify">
+
+    <h2>NOW PLAYING</h2>
+
+    <iframe
+    data-testid="embed-iframe"
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/3paqBku7R2cpFcFgEWPjjV?utm_source=generator"
+    width="100%"
+    height="352"
+    frameborder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+    </iframe>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="timeline">
+
+    <h2>THE TIMELINE</h2>
+
+    <div class="timeline-line">
+
+        <button class="timeline-btn" onclick="openTimeline('1995')">
+            1995
+        </button>
+
+        <button class="timeline-btn" onclick="openTimeline('2023')">
+            2023
+        </button>
+
+        <button class="timeline-btn" onclick="openTimeline('2026')">
+            2026
+        </button>
+
+    </div>
+
+</section>
+
+<div class="timeline-popup" id="timelinePopup">
+
+    <div class="popup-content">
+
+        <span class="close-popup" onclick="closeTimeline()">
+            ✕
+        </span>
+
+        <h2 id="popupYear"></h2>
+
+        <h3 id="popupTitle"></h3>
+
+        <img id="popupImage" src="timeline1.jpg">
+
+        <p id="popupText"></p>
+
+        <div class="popup-sign">
+
+            VIVA LA VIDA
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARRUSEL -->
+
+<section class="carousel-section">
+
+    <h2>MEMORIES THROUGH TIME</h2>
+
+    <div class="carousel">
+
+        <button class="prev">
+            ❮
+        </button>
+
+        <img
+        id="carousel-image"
+        src="banda1.jpg"
+        alt="Watermelon Sugar">
+
+        <button class="next">
+            ❯
+        </button>
+
+    </div>
+
+</section>
+
+<!-- INTEGRANTES -->
+
+
+<section class="band">
+
+    <h2>MEET THE BAND</h2>
+
+    <div class="band-grid">
+
+        <div class="member">
+
+            <img src="galeria1e.jpg" alt="Ha Eun Gyeol">
+
+            <h3>Ha Eun Gyeol</h3>
+
+            <p>Lead Guitar & Vocals</p>
+
+        </div>
+
+        <div class="member">
+
+            <img src="galeria2.y.jpg" alt="Ha Yi Chan">
+
+            <h3>Ha Yi Chan</h3>
+
+            <p>Lead Guitar & Vocals</p>
+
+        </div>
+
+        <div class="member">
+
+            <img src="galeria5.k.jpg" alt="Kang Hyun Yool">
+
+            <h3>Kang Hyun Yool</h3>
+
+            <p>Bass & Guitar</p>
+
+        </div>
+
+        <div class="member">
+
+            <img src="galeria4.n.png" alt="No Se Bum">
+
+            <h3>No Se Bum</h3>
+
+            <p>Drums</p>
+
+        </div>
+
+        <div class="member">
+
+            <img src="galeria3.u.jpg" alt="Lee Shi Kook">
+
+            <h3>Lee Shi Kook</h3>
+
+            <p>Piano</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section class="countdown">
+
+    <h2>COUNTDOWN TO THE SHOW</h2>
+
+    <div id="countdown-box">
+
+        000 DAYS
+
+    </div>
+
+</section>
+
+<!-- MERCH -->
+
+<section class="merch">
+
+    <h2>OFFICIAL MERCH</h2>
+
+    <div class="merch-grid">
+
+        <div class="merch-item">
+
+            <img src="camisawt.jpg" alt="The Reunion Shirt">
+
+            <h3>THE REUNION SHIRT</h3>
+
+            <p>
+                Camiseta oficial de la gira 2026 que celebra el regreso de Watermelon Sugar.
+            </p>
+
+        </div>
+
+        <div class="merch-item">
+
+            <img src="puawt.png" alt="Sounds of Time Picks">
+
+            <h3>SOUNDS OF TIME PICKS</h3>
+
+            <p>
+                Set de púas inspirado en las canciones y recuerdos que conectaron generaciones.
+            </p>
+
+        </div>
+
+        <div class="merch-item">
+
+            <img src="keychanwt.jpg" alt="The Timeline Keychain">
+
+            <h3>THE TIMELINE KEYCHAIN</h3>
+
+            <p>
+                Un recuerdo especial para llevar contigo una parte de la historia de la banda.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="social-ending">
+
+    <h2>THE STORY CONTINUES...</h2>
+
+    <p>
+        Every timeline leaves behind memories.
+        Some of them are still being written.
+    </p>
+
+    <div class="social-buttons">
+
+        <a href="https://www.instagram.com/_ryeoun?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+           target="_blank"
+           class="character-btn ryoeun">
+
+            <span>🎸</span>
+
+            <div>
+
+                <h3>RYOEUN</h3>
+
+                <p>Follow the Journey</p>
+
+            </div>
+
+        </a>
+
+        <a href="https://www.instagram.com/_choiiii__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+           target="_blank"
+           class="character-btn choi">
+
+            <span>🎤</span>
+
+            <div>
+
+                <h3>CHOI HYUN WOOK</h3>
+
+                <p>Behind the Music</p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <h1>VIVA LA VIDA</h1>
+
+    <p>
+
+        Some songs never end.
+
+        <br><br>
+
+        Some memories never fade.
+
+        <br><br>
+
+        Watermelon Sugar Returns.
+
+    </p>
+
+    <a href="#intro" class="return-home">
+    VOLVER AL INICIO
+</a>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
